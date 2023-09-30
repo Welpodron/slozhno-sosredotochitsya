@@ -4,10 +4,6 @@
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
-.shadow-decor_big {
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-}
-
 /* #endregion Конец вспомогательных классов  */
 
 /* #region Начало глобальных компонентов */
@@ -111,6 +107,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 .title {
@@ -210,6 +207,11 @@
 
 .header__title {
   margin-block: 55px;
+  color: var(--highlight-color, #000028);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  background: var(--accent-color, #ff0070);
 }
 
 /* #endregion Конец блока header */
@@ -240,6 +242,7 @@
 
   .page-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    transform: translateX(-20px);
   }
 
   .section {
@@ -279,10 +282,6 @@
     margin-block-end: 70px;
   }
 
-  .header__page-title {
-    transform: translateX(-20px);
-  }
-
   .header__title {
     justify-self: end;
     inline-size: clamp(364px, calc(100% / 2), 491px);
@@ -295,7 +294,7 @@
 }
 
 @media (width >= 1024px) {
-  .shadow-decor_unique {
+  .page-title {
     text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
   }
 
