@@ -16,10 +16,7 @@
   background-color: var(--page-background-color, #000028);
   background-image: var(
     --page-background-image,
-    image-set(
-      url("../images/cover-image.png") 1x,
-      url("../images/cover-image.png") 2x
-    )
+    url("../images/cover-image.png")
   );
   background-position: center;
   background-size: cover;
